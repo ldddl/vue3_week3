@@ -25,6 +25,8 @@ const app = {
           this.getProducts();
         }).catch((err) => {
           console.dir(err)
+          alert('登入驗證失敗');
+          window.location.href = 'index.html';
         });
     },
     getProducts(){
