@@ -36,6 +36,7 @@ const app = {
           console.log(result.data.products);
           this.products = result.data.products;
         }).catch((err) => {
+          console.log('getProducts');
           console.log(err);
         });
     },
